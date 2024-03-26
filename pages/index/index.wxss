@@ -1,0 +1,110 @@
+/* index.wxss */
+.page-container {
+  background-image:url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.button-container {
+  display:flex;
+  flex-direction: column; /* 将按钮容器的排列方向设置为纵向（上下） */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明遮罩 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 设置按钮样式，使用 rgba 来设置颜色并包含透明度 */
+button {
+  width: 120rpx; /* 设置按钮宽度 */
+  height: 100rpx; /* 设置按钮高度 */
+  background-color: rgba(255, 255, 255, 0.7); /* 白色背景，透明度为 0.7 */
+  padding: 10rpx 20rpx;
+  margin: 50rpx;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 50rpx;
+  opacity: 0.8; /* 设置按钮整体的透明度 */
+}
+
+.dialog {
+  background-color: #fff;
+  padding: 20rpx;
+  width: 80%;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+/* 显示文本列表的弹出框中的文本样式 */
+.text-list-item {
+  margin-bottom: 10rpx;
+  font-size: 16rpx;
+}
+
+.input-container {
+  width: 100%;
+  text-align: left; /* 将文本框内容左对齐 */
+}
+
+.input {
+  width: 100%;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 5rpx;
+  padding: 10rpx;
+  box-sizing: border-box; /* 保证 padding 不会撑大元素 */
+}
+
+.input::placeholder {
+  font-size: 10rpx; /* 调整提示词字体大小 */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-button,
+.cancel-button,
+.random-button,
+.confirm-button,
+.cancel-button {
+  width: 40%;
+  padding: 10rpx;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.confirm-button {
+  width: 80rpx; /* 设置按钮宽度 */
+  height: 70rpx; /* 设置按钮高度 */
+  background-color: #5cb85c; /* 确认按钮颜色 */
+}
+
+.cancel-button {
+  width: 80rpx; /* 设置按钮宽度 */
+  height: 70rpx; /* 设置按钮高度 */
+  background-color: #d9534f; /* 取消按钮颜色 */
+}
+
+.random-button {
+  width: 80rpx; /* 设置按钮宽度 */
+  height: 70rpx; /* 设置按钮高度 */
+  background-color: #4a2c91; /* 取消按钮颜色 */
+}
+
